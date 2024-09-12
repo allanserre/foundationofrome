@@ -1,0 +1,21 @@
+$deedScale : 0.61;
+
+.dead-container {
+  position: relative;
+}
+
+.dead-river-container {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  gap: 9px;
+  margin: 21px;
+}
+.dead-river-card {
+}
+
+.deed-img {
+  width: calc(1616px * $deedScale);
+  height: calc(1000px * $deedScale);
+}

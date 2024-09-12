@@ -1,0 +1,11 @@
+<div class="dead-container">
+  <img class="deed-img" src="img/plateaux/Deed_Board.jpg"/>
+  <div class="dead-river-container">
+    @for (card of riverCards; track card) {
+      <div class="dead-river-card">
+        <app-deck-card [cardRow]="card.row" [cardColumn]="card.col"></app-deck-card>
+      </div>
+    }
+  </div>
+
+</div>

@@ -1,0 +1,32 @@
+.player-board-container {
+  position: relative;
+  width: 954px;
+  height: 954px;
+
+  .main-tokens-container {
+    width: 634px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 80px;
+    margin-left: 162px;
+    margin-right: 160px;
+    align-items: center;
+    margin-top: 180px;
+
+     .player-token {
+       width: 40px;
+       height: 40px;
+       margin: 20px 18px 20px 19px;
+       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+       background-color: red;
+
+       &:nth-child(5) {
+         margin: 20px 18px 20px 31px;
+       }
+     }
+
+
+  }
+}

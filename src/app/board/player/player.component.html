@@ -1,0 +1,8 @@
+<div class="player-board-container">
+  <img [src]="'img/plateaux/' + player.color + '.jpg'">
+  <div class="main-tokens-container">
+    @for (i of [].constructor(player.tokenCount) ; track i) {
+      <div class="player-token"></div>
+    }
+  </div>
+</div>

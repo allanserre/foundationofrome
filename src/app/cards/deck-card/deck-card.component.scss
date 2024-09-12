@@ -1,0 +1,365 @@
+@import "../../../variables";
+
+.deck1 {
+  background-image: url("/img/cartes/deck1.jpg");
+  background-size: calc(7500px * $scaleRatio) calc(7350px * $scaleRatio);
+}
+
+
+.cardDiv {
+  width: calc(750px * $scaleRatio);
+  height: calc(1050px * $scaleRatio);
+  float: left;
+  position: relative;
+  border-radius: 5px;
+}
+
+.a1 {
+  background-position-x: -0px;
+  background-position-y: -0px;
+}
+
+.b1 {
+  background-position-x: -150px;
+  background-position-y: -210px;
+}
+
+.c1 {
+  background-position-x: -150px;
+  background-position-y: -420px;
+}
+
+.d1 {
+  background-position-x: -150px;
+  background-position-y: -630px;
+}
+
+.e1 {
+  background-position-x: -150px;
+  background-position-y: -840px;
+}
+
+.f1 {
+  background-position-x: -1200px;
+  background-position-y: -630px;
+}
+
+.g1 {
+  background-position-x: -150px;
+  background-position-y: -1260px;
+}
+
+.a2 {
+  background-position-x: -300px;
+  background-position-y: -0px;
+}
+
+.b2 {
+  background-position-x: -300px;
+  background-position-y: -210px;
+}
+
+.c2 {
+  background-position-x: -300px;
+  background-position-y: -420px;
+}
+
+.d2 {
+  background-position-x: -300px;
+  background-position-y: -630px;
+}
+
+.e2 {
+  background-position-x: -300px;
+  background-position-y: -840px;
+}
+
+.f2 {
+  background-position-x: -300px;
+  background-position-y: -1050px;
+}
+
+.g2 {
+  background-position-x: -300px;
+  background-position-y: -1260px;
+}
+
+.a3 {
+  background-position-x: -450px;
+  background-position-y: -0px;
+}
+
+.b3 {
+  background-position-x: -150px;
+  background-position-y: 0px;
+}
+
+.c3 {
+  background-position-x: -450px;
+  background-position-y: -420px;
+}
+
+.d3 {
+  background-position-x: -450px;
+  background-position-y: -630px;
+}
+
+.e3 {
+  background-position-x: -450px;
+  background-position-y: -840px;
+}
+
+.f3 {
+  background-position-x: -450px;
+  background-position-y: -1050px;
+}
+
+.g3 {
+  background-position-x: -450px;
+  background-position-y: -1260px;
+}
+
+.a4 {
+  background-position-x: -600px;
+  background-position-y: -0px;
+}
+
+.b4 {
+  background-position-x: -600px;
+  background-position-y: -210px;
+}
+
+.c4 {
+  background-position-x: -600px;
+  background-position-y: -420px;
+}
+
+.d4 {
+  background-position-x: -600px;
+  background-position-y: -630px;
+}
+
+.e4 {
+  background-position-x: -600px;
+  background-position-y: -840px;
+}
+
+.f4 {
+  background-position-x: -600px;
+  background-position-y: -1050px;
+}
+
+.g4 {
+  background-position-x: -150px;
+  background-position-y: -1050px;
+}
+
+.a5 {
+  background-position-x: -750px;
+  background-position-y: -0px;
+}
+
+.b5 {
+  background-position-x: -750px;
+  background-position-y: -210px;
+}
+
+.c5 {
+  background-position-x: -750px;
+  background-position-y: -420px;
+}
+
+.d5 {
+  background-position-x: -750px;
+  background-position-y: -630px;
+}
+
+.e5 {
+  background-position-x: -750px;
+  background-position-y: -840px;
+}
+
+.f5 {
+  background-position-x: -750px;
+  background-position-y: -1050px;
+}
+
+.g5 {
+  background-position-x: -600px;
+  background-position-y: -1260px;
+}
+
+.a6 {
+  background-position-x: -900px;
+  background-position-y: -0px;
+}
+
+.b6 {
+  background-position-x: -900px;
+  background-position-y: -210px;
+}
+
+.c6 {
+  background-position-x: -450px;
+  background-position-y: -210px;
+}
+
+.d6 {
+  background-position-x: -900px;
+  background-position-y: -630px;
+}
+
+.e6 {
+  background-position-x: -900px;
+  background-position-y: -840px;
+}
+
+.f6 {
+  background-position-x: -900px;
+  background-position-y: -1050px;
+}
+
+.g6 {
+  background-position-x: -750px;
+  background-position-y: -1260px;
+}
+
+.a7 {
+  background-position-x: -1050px;
+  background-position-y: -0px;
+}
+
+.b7 {
+  background-position-x: -1050px;
+  background-position-y: -210px;
+}
+
+.c7 {
+  background-position-x: -1050px;
+  background-position-y: -420px;
+}
+
+.d7 {
+  background-position-x: -1050px;
+  background-position-y: -630px;
+}
+
+.e7 {
+background-position-x: -1050px;
+  background-position-y: -840px;
+}
+
+.f7 {
+  background-position-x: -1050px;
+  background-position-y: -1050px;
+}
+
+.g7 {
+  background-position-x: -900px;
+  background-position-y: -1260px;
+}
+
+.a8 {
+  background-position-x: -1200px;
+  background-position-y: -0px;
+}
+
+.b8 {
+  background-position-x: -1200px;
+  background-position-y: -210px;
+}
+
+.c8 {
+  background-position-x: -1200px;
+  background-position-y: -420px;
+}
+
+.d8 {
+  background-position-x: -0px;
+  background-position-y: -630px;
+}
+
+.e8 {
+  background-position-x: -1200px;
+  background-position-y: -840px;
+}
+
+.f8 {
+  background-position-x: -1200px;
+  background-position-y: -1050px;
+}
+
+.g8 {
+  background-position-x: -1050px;
+  background-position-y: -1260px;
+}
+
+.a9 {
+  background-position-x: -1350px;
+  background-position-y: -0px;
+}
+
+.b9 {
+  background-position-x: -1350px;
+  background-position-y: -210px;
+}
+
+.c9 {
+  background-position-x: -1350px;
+  background-position-y: -420px;
+}
+
+.d9 {
+  background-position-x: -1350px;
+  background-position-y: -630px;
+}
+
+.e9 {
+  background-position-x: -1350px;
+  background-position-y: -840px;
+}
+
+.f9 {
+  background-position-x: -1350px;
+  background-position-y: -1050px;
+}
+
+.g9 {
+  background-position-x: -1200px;
+  background-position-y: -1260px;
+}
+
+.a10 {
+  background-position-x: -1350px;
+  background-position-y: -0px;
+}
+
+.b10 {
+  background-position-x: -1350px;
+  background-position-y: -210px;
+}
+
+.c10 {
+  background-position-x: -1350px;
+  background-position-y: -420px;
+}
+
+.d10 {
+  background-position-x: -1350px;
+  background-position-y: -630px;
+}
+
+.e10 {
+  background-position-x: -1350px;
+  background-position-y: -840px;
+}
+
+.f10 {
+  background-position-x: -1350px;
+  background-position-y: -1050px;
+}
+
+.g10 {
+  background-position-x: -1350px;
+  background-position-y: -1260px;
+}
