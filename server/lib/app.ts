@@ -1,11 +1,11 @@
 import { Server as HttpServer } from "http";
 import { Server, ServerOptions } from "socket.io";
 import { ClientEvents, ServerEvents } from "../../common/events";
-import { TodoRepository } from "./todo-management/todo.repository";
-import createTodoHandlers from "./todo-management/todo.handlers";
+import { RoomRepository } from "./room-management/room.repository";
+import createRoomHandlers from "./room-management/room.handlers";
 
 export interface Components {
-  todoRepository: TodoRepository;
+  roomRepository: RoomRepository;
 }
 
 export function createApplication(
@@ -16,19 +16,19 @@ export function createApplication(
   const io = new Server<ClientEvents, ServerEvents>(httpServer, serverOptions);
 
   const {
-    createTodo,
-    readTodo,
-    updateTodo,
-    deleteTodo,
-    listTodo,
-  } = createTodoHandlers(components);
+    createRoom,
+    readRoom,
+    updateRoom,
+    deleteRoom,
+    listRoom,
+  } = createRoomHandlers(components);
 
   io.on("connection", (socket) => {
-    socket.on("todo:create", createTodo);
-    socket.on("todo:read", readTodo);
-    socket.on("todo:update", updateTodo);
-    socket.on("todo:delete", deleteTodo);
-    socket.on("todo:list", listTodo);
+    socket.on("room:create", createRoom);
+    socket.on("room:read", readRoom);
+    socket.on("room:update", updateRoom);
+    socket.on("room:delete", deleteRoom);
+    socket.on("room:list", listRoom);
   });
 
   return io;

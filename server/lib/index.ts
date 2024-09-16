@@ -1,13 +1,13 @@
 import { createServer } from "http";
 import { createApplication } from "./app";
-import { InMemoryTodoRepository } from "./todo-management/todo.repository";
+import { InMemoryRoomRepository } from "./room-management/room.repository";
 
 const httpServer = createServer();
 
 createApplication(
   httpServer,
   {
-    todoRepository: new InMemoryTodoRepository(),
+    roomRepository: new InMemoryRoomRepository(),
   },
   {
     cors: {

@@ -1,10 +1,4 @@
-export type TodoID = string;
-
-export interface Todo {
-  id: TodoID;
-  completed: boolean;
-  title: string;
-}
+import { Room, RoomID } from "./Room"
 
 interface Error {
   error: string;
@@ -22,25 +16,25 @@ interface Success<T> {
 export type Response<T> = Error | Success<T>;
 
 export interface ServerEvents {
-  "todo:created": (todo: Todo) => void;
-  "todo:updated": (todo: Todo) => void;
-  "todo:deleted": (id: TodoID) => void;
+  "room:created": (room: Room) => void;
+  "room:updated": (room: Room) => void;
+  "room:deleted": (id: RoomID) => void;
 }
 
 export interface ClientEvents {
-  "todo:list": (callback: (res: Response<Todo[]>) => void) => void;
+  "room:list": (callback: (res: Response<Room[]>) => void) => void;
 
-  "todo:create": (
-    payload: Omit<Todo, "id">,
-    callback: (res: Response<TodoID>) => void
+  "room:create": (
+    payload: Omit<Room, "id">,
+    callback: (res: Response<RoomID>) => void
   ) => void;
 
-  "todo:read": (id: TodoID, callback: (res: Response<Todo>) => void) => void;
+  "room:read": (id: RoomID, callback: (res: Response<Room>) => void) => void;
 
-  "todo:update": (
-    payload: Todo,
+  "room:update": (
+    payload: Room,
     callback: (res?: Response<void>) => void
   ) => void;
 
-  "todo:delete": (id: TodoID, callback: (res?: Response<void>) => void) => void;
+  "room:delete": (id: RoomID, callback: (res?: Response<void>) => void) => void;
 }
